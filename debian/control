@@ -1,0 +1,20 @@
+Source: fonts-inter-minimal
+Section: fonts
+Priority: optional
+Maintainer: crims0n <crims0n@minios.dev>
+Build-Depends: debhelper (>= 11), python3-fonttools
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://rsms.me/inter/
+
+Package: fonts-inter-minimal
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Conflicts: fonts-inter, fonts-inter-variable
+Replaces: fonts-inter
+Description: Inter desktop fonts in four essential styles
+ Inter is a typeface designed for legible user interfaces.
+ This minimal package contains Regular, Bold, Italic and Bold Italic
+ static OpenType fonts, with their complete original character coverage.
+ Additional weights, Inter Display and variable fonts are omitted.

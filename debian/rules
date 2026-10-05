@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# Debian 13 ships the upstream OTFs; its source build requires the network.
+override_dh_auto_configure:
+
+override_dh_auto_build:
+
+override_dh_auto_install:
+
+override_dh_auto_test:
+	python3 debian/check-fonts.py docs/font-files Inter otf
+
+override_dh_auto_clean:
